@@ -523,7 +523,7 @@ Key controls:
 
 **Short answer:** Any agent type. AGT is framework-agnostic and vendor-independent by design — the core packages (`agent-os-kernel`, `agentmesh-platform`, etc.) have zero vendor dependencies.
 
-It works with Azure AI Foundry, AWS Bedrock, Google ADK, LangChain, CrewAI, AutoGen, OpenAI Agents, OpenClaw, and 20+ other frameworks. See the full list in the [README](https://github.com/microsoft/agent-governance-toolkit/blob/main/README.md#framework-support).
+It works with Microsoft Agent Framework, Azure AI Foundry, AWS Bedrock, Google ADK, LangChain, CrewAI, AutoGen, OpenAI Agents, OpenClaw, and 20+ other frameworks. See the full list in the [README](https://github.com/microsoft/agent-governance-toolkit/blob/main/README.md#framework-support).
 
 ### How It Works
 
