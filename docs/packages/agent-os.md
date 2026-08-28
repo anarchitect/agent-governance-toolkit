@@ -944,7 +944,7 @@ These components are fully implemented and tested:
 | **Policy Engine** — Deterministic rule enforcement | ✅ Tested |
 | **Flight Recorder** — SQLite-based audit logging | ✅ Tested |
 | **CLI** — `agent-os check`, `init`, `secure`, `validate` | ✅ Tested |
-| **Framework Adapters** — LangChain, OpenAI, Semantic Kernel, CrewAI, AutoGen, OpenAI Agents SDK | ✅ Implemented |
+| **Framework Adapters** — Microsoft Agent Framework, LangChain, OpenAI, Semantic Kernel, CrewAI, AutoGen, OpenAI Agents SDK | ✅ Implemented |
 | **AGENTS.md Parser** — OpenAI/Anthropic standard agent config | ✅ Full coverage |
 | **Primitives** (`agent-primitives`) — Failure types, severity levels | ✅ Tested |
 | **CMVK** (`cmvk`) — Drift detection, distance metrics (955+ lines) | ✅ Tested |
@@ -1057,7 +1057,7 @@ Agent OS enforces policies at the middleware layer. Actions are intercepted and 
 
 ### What frameworks are supported?
 
-Agent OS can wrap and govern agents built with popular frameworks including LangChain, CrewAI, AutoGen, Semantic Kernel, and the OpenAI SDK. It also supports MCP-based integrations.
+Agent OS can wrap and govern agents built with popular frameworks including Microsoft Agent Framework, LangChain, CrewAI, AutoGen, Semantic Kernel, and the OpenAI SDK. It also supports MCP-based integrations.
 
 ### Can I use this in production?
 

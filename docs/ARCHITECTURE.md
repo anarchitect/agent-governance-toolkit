@@ -68,7 +68,8 @@ Community video series covering the toolkit architecture:
 ║                                                                         ║
 ║  ┌──────────────────────────────────────────────────────────────┐       ║
 ║  │              FRAMEWORK ADAPTERS                              │       ║
-║  │  LangChain · CrewAI · AutoGen · OpenAI · ADK · smolagents   │       ║
+║  │  MAF · Semantic Kernel · LangChain · CrewAI · AutoGen        │       ║
+║  │  OpenAI · Google ADK · LangGraph · LlamaIndex · smolagents   │       ║
 ║  └──────────────────────────────────────────────────────────────┘       ║
 ║                                                                         ║
 ╚══════════════════════════════════════════════════════════════════════════╝

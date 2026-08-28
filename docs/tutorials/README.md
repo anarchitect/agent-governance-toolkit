@@ -27,8 +27,9 @@ guides.
 |---|----------|-------------------|---------|
 | 01 | Policy Engine | YAML rules, operators, conflict resolution, middleware integration | `agent-governance-toolkit-core` |
 | 02 | [Trust & Identity](02-trust-and-identity.md) | Ed25519 credentials, DIDs, SPIFFE/SVID, trust scoring (0–1000) | `agent-governance-toolkit-core` |
-| 03 | [Framework Integrations](03-framework-integrations.md) | Govern LangChain, CrewAI, AutoGen, OpenAI Agents, Google ADK | `agent-governance-toolkit-core` |
+| 03 | [Framework Integrations](03-framework-integrations.md) | Govern Microsoft Agent Framework, LangChain, CrewAI, AutoGen, OpenAI Agents, Google ADK | `agent-governance-toolkit-core` |
 | 04 | [Audit & Compliance](04-audit-and-compliance.md) | Append-only audit logs, hash chains, OWASP ASI mapping | `agent-governance-toolkit-cli` |
+| 34 | [Microsoft Agent Framework Integration](34-maf-integration.md) | `MAFKernel`, runtime middleware, capability guard for Python MAF agents | `agent-governance-toolkit-core` |
 
 ## Policy & Security
 
@@ -73,6 +74,7 @@ guides.
 |---|----------|-------------------|---------|
 | 19 | [.NET package](19-dotnet-sdk.md) | GovernanceKernel, policy, rings, saga, SLO, OpenTelemetry in C# | `Microsoft.AgentGovernance` |
 | 42 | [C# MCP extension](42-csharp-mcp-extension.md) | Add governed tool execution, startup scanning, and response sanitization to MCP servers | `Microsoft.AgentGovernance.Extensions.ModelContextProtocol` |
+| 43 | [.NET MAF hook integration](43-dotnet-maf-hook-integration.md) | Governance hooks for .NET Microsoft Agent Framework agents | `Microsoft.AgentGovernance` |
 | 20 | [TypeScript package](20-typescript-sdk.md) | Identity, trust, policy, audit in TypeScript/Node.js | `@microsoft/agent-governance-sdk` |
 | 21 | [Rust crate](21-rust-sdk.md) | Policy, trust, audit, identity with `agentmesh` crate | `agentmesh` |
 | 22 | [Go module](22-go-sdk.md) | Policy, trust, audit, identity with Go module | `agentmesh` |

@@ -59,6 +59,15 @@ from agent_os.integrations.langchain_adapter import LangChainKernel
 kernel = LangChainKernel(runtime=runtime)
 ```
 
+Microsoft Agent Framework uses the same pattern:
+
+```python
+from agent_os.integrations.maf_adapter import MAFKernel
+
+kernel = MAFKernel(runtime=runtime)
+middleware = kernel.as_runtime_middleware()
+```
+
 Every supported adapter receives the native runtime through `runtime=`. Policy
 definitions, blocked content, tool catalogs, budgets, transforms, and approval
 belong in the manifest rather than the adapter constructor.
@@ -81,5 +90,6 @@ The public exception text is sanitized. Trusted code can use the attached
 
 - [Agent Control Specification](tutorials/55-agent-control-specification.md)
 - [Framework integrations](tutorials/03-framework-integrations.md)
+- [Microsoft Agent Framework integration](tutorials/34-maf-integration.md)
 - [Policy testing](tutorials/policy-as-code/06-policy-testing.md)
 - [Progressive governance](tutorials/progressive-governance.md)
