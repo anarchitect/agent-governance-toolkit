@@ -186,15 +186,29 @@ print(f"Allowed: {result2.allowed}")  # False
 print(f"Reason: {result2.reason}")    # "Blocked by policy"
 ```
 
-### Step 4: Add to a LangChain/CrewAI/ADK agent
+### Step 4: Add to your agent framework (MAF, LangChain, CrewAI, ADK, and more)
 
-See the native framework examples:
+Every supported framework receives the same governance runtime through a native
+adapter. See the runnable framework examples:
 
-- `examples/crewai-governed/getting_started.py`
-- `examples/openai-agents-governed/getting_started.py`
-- `examples/smolagents-governed/getting_started.py`
-- `examples/maf-integration/01-loan-processing/python/main.py`
-- `examples/quickstart/google_adk_governed.py`
+| Framework | Example |
+|-----------|---------|
+| Microsoft Agent Framework (Python) | `examples/maf-integration/01-loan-processing/python/main.py` |
+| Microsoft Agent Framework (.NET) | `examples/maf-integration/06-dotnet-extension-validation/dotnet/` |
+| CrewAI | `examples/crewai-governed/getting_started.py` |
+| OpenAI Agents SDK | `examples/openai-agents-governed/getting_started.py` |
+| smolagents | `examples/smolagents-governed/getting_started.py` |
+| Google ADK | `examples/quickstart/google_adk_governed.py` |
+
+Microsoft Agent Framework is supported natively: `MAFKernel` (from
+`agent_os.integrations.maf_adapter`) wraps the runtime and exposes
+`kernel.as_runtime_middleware()` for the MAF agent pipeline. See
+[MAF Integration](tutorials/34-maf-integration.md) for Python and
+[.NET MAF Hook Integration](tutorials/43-dotnet-maf-hook-integration.md) for .NET.
+
+Adapters for LangChain, LangGraph, AutoGen, Semantic Kernel, LlamaIndex,
+Haystack, PydanticAI, and others are listed in
+[Framework Integrations](tutorials/03-framework-integrations.md).
 
 ---
 
@@ -286,7 +300,7 @@ cd ../agent-compliance && python -m pytest tests/ -q
 ```
 ┌─────────────────────────────────────────────┐
 │            Your Agent (any framework)        │
-│  LangChain / CrewAI / ADK / AutoGen / etc.  │
+│  MAF / LangChain / CrewAI / ADK / AutoGen   │
 └──────────────────┬──────────────────────────┘
                    │ Tool call
                    ▼

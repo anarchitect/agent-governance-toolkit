@@ -60,6 +60,12 @@ pip install "agent-governance-toolkit-integrations[crewai,openai-agents]"
 Available extras include LangChain, CrewAI, OpenAI Agents, LangGraph,
 LlamaIndex, Haystack, PydanticAI, Google ADK, Cedarling, and OpenShell.
 
+Adapters that require no extra install ship with
+`agent-governance-toolkit-core` under `agent_os.integrations`, including
+Microsoft Agent Framework (`maf_adapter.MAFKernel`), Semantic Kernel, AutoGen,
+smolagents, Anthropic, Bedrock, and Gemini. See the
+[MAF integration tutorial](../tutorials/34-maf-integration.md).
+
 Source: `agent-governance-python/agent-governance-toolkit-integrations`
 
 ## CLI and operations

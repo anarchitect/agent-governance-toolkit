@@ -209,7 +209,7 @@ rings, memory guards, and framework-specific adapters.
 | **Output drift detection** | `DriftDetector` | Post-execution hook |
 | **Memory/context integrity** | `MemoryGuard` | Wrap memory store |
 | **Rogue agent detection** | `RogueDetector` | Background monitor |
-| **Framework adapters** | LangChain, SK, CrewAI, ADK, AutoGen | Framework-specific wiring |
+| **Framework adapters** | MAF, LangChain, SK, CrewAI, ADK, AutoGen | Framework-specific wiring |
 | **MCP gateway (5-stage pipeline)** | `MCPGateway` | MCP server wrapper |
 
 ### OWASP coverage at Tier 2

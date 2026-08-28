@@ -89,8 +89,9 @@ safe_tool = govern(my_tool, policy="policy.yaml")
 
 On every call, `safe_tool` evaluates the YAML policy, logs the decision to an
 audit trail, and raises `GovernanceDenied` when the policy blocks the action.
-Because it wraps a callable, the same pattern works with tools from LangChain,
-CrewAI, OpenAI Agents, AutoGen, Google ADK, and any other framework.
+Because it wraps a callable, the same pattern works with tools from Microsoft
+Agent Framework, LangChain, CrewAI, OpenAI Agents, AutoGen, Google ADK, and any
+other framework.
 
 ```yaml
 # policy.yaml
@@ -239,9 +240,10 @@ change the ACS decision contract.
 
 Use `govern()` to wrap application callables. For framework lifecycle hooks,
 hosts use the native ACS Python SDK to build snapshots and enforce verdicts.
-Optional adapters cover LangChain, CrewAI, OpenAI Agents, LangGraph,
-LlamaIndex, Haystack, PydanticAI, and Google ADK. See the
-[package guide](packages/index.md#framework-integrations).
+Optional adapters cover Microsoft Agent Framework, LangChain, CrewAI, OpenAI
+Agents, LangGraph, LlamaIndex, Haystack, PydanticAI, and Google ADK. See the
+[package guide](packages/index.md#framework-integrations) and the
+[MAF integration tutorial](tutorials/34-maf-integration.md).
 
 </div>
 

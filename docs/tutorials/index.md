@@ -24,7 +24,7 @@ For developers adding governance to their first agent.
 
 1. [2-Line Quickstart](36-govern-quickstart.md) — `govern()` in 2 lines
 2. [Policy Engine Basics](01-policy-engine.md) — write your first policy
-3. [Framework Integrations](03-framework-integrations.md) — connect to LangChain, CrewAI, OpenAI, etc.
+3. [Framework Integrations](03-framework-integrations.md) — connect to Microsoft Agent Framework, LangChain, CrewAI, OpenAI, and more
 4. [Govern an AI Agent](04-audit-and-compliance.md) — full audit trail
 
 ### :material-tune-variant: **Path 2: Build an ACS policy host** (50 min)
@@ -97,8 +97,8 @@ Choose the end-to-end scenario closest to your use case.
 |----------|-------------|
 | [Govern an AI Agent (Python)](04-audit-and-compliance.md) | Full audit trail with compliance mapping for a Python agent |
 | [Govern MCP Tool Servers](07-mcp-security-gateway.md) | Per-tool policy enforcement for MCP servers |
-| [.NET MAF Integration](34-maf-integration.md) | Govern agents built with Microsoft Agent Framework |
-| [.NET MAF Hook](43-dotnet-maf-hook-integration.md) | Add governance hooks to .NET MAF agents |
+| [MAF Integration (Python)](34-maf-integration.md) | Govern Python agents built with Microsoft Agent Framework |
+| [MAF Hook Integration (.NET)](43-dotnet-maf-hook-integration.md) | Add governance hooks to .NET MAF agents |
 | [Multi-Agent Fleet Policies](49-multi-agent-policies.md) | Collective policy enforcement across agent fleets |
 | [Multi-Stage Pipeline](37-multi-stage-pipeline.md) | Chained policy evaluation for complex workflows |
 | [Retrofit Existing Agents](retrofit-governance.md) | Add governance to agents already in production |
